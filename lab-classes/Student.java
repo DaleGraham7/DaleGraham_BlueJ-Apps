@@ -1,11 +1,10 @@
-import java.util.*;
 
 /**
  * The Student class represents a student in a student administration system.
  * It holds the student details relevant in our context.
  * 
  * @author Michael Kölling and David Barnes
- * @version 2016.02.29
+ * @version 2011.07.31
  */
 public class Student
 {
@@ -15,7 +14,9 @@ public class Student
     private String id;
     // the amount of credits for study taken so far
     private int credits;
-    
+    // student course details
+    private Course course;
+
     /**
      * Create a new student with a given name and ID number.
      */
@@ -25,8 +26,11 @@ public class Student
         id = studentID;
         credits = 0;
     }
-
-    /**
+  
+    
+    
+ 
+     /**
      * Return the full name of this student.
      */
     public String getName()
@@ -58,7 +62,6 @@ public class Student
         credits += additionalPoints;
     }
 
-    
     /**
      * Return the number of credit points this student has accumulated.
      */
